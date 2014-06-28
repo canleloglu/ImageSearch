@@ -1,0 +1,238 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "nextPage": [
+                     {
+                     "title": "Google Custom Search - string",
+                     "totalResults": "118000000",
+                     "searchTerms": "string",
+                     "count": 10,
+                     "startIndex": 11,
+                     "inputEncoding": "utf8",
+                     "outputEncoding": "utf8",
+                     "safe": "off",
+                     "cx": "012264070333409960131:z-pppmmfxfk",
+                     "searchType": "image"
+                     }
+                     ],
+        "request": [
+                    {
+                    "title": "Google Custom Search - string",
+                    "totalResults": "118000000",
+                    "searchTerms": "string",
+                    "count": 10,
+                    "startIndex": 1,
+                    "inputEncoding": "utf8",
+                    "outputEncoding": "utf8",
+                    "safe": "off",
+                    "cx": "012264070333409960131:z-pppmmfxfk",
+                    "searchType": "image"
+                    }
+                    ]
+    },
+    "context": {
+        "title": "Google"
+    },
+    "searchInformation": {
+        "searchTime": 0.17205,
+        "formattedSearchTime": "0.17",
+        "totalResults": "118000000",
+        "formattedTotalResults": "118,000,000"
+    },
+    "items": [
+              {
+              "kind": "customsearch#result",
+              "title": "File:G - String.jpg - Wikimedia Commons",
+              "htmlTitle": "File:G - \u003cb\u003eString\u003c/b\u003e.jpg - Wikimedia Commons",
+              "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/G_-_String.jpg/1280px-G_-_String.jpg",
+              "displayLink": "commons.wikimedia.org",
+              "snippet": "File:G - String.jpg",
+              "htmlSnippet": "File:G - \u003cb\u003eString\u003c/b\u003e.jpg",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://commons.wikimedia.org/wiki/File:G_-_String.jpg",
+              "height": 860,
+              "width": 1280,
+              "byteSize": 178053,
+              "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD1sbdEJxDUYZuM_DGjSXo69e6uTd1ioDbBiaGSwHh1xXb0Daf1ddXfdQ",
+              "thumbnailHeight": 101,
+              "thumbnailWidth": 150
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "My Magic String | Maria's Movers",
+              "htmlTitle": "My Magic \u003cb\u003eString\u003c/b\u003e | Maria&#39;s Movers",
+              "link": "http://mariasmovers.com/wp-content/uploads/2012/01/5000-pic-string.jpg",
+              "displayLink": "mariasmovers.com",
+              "snippet": "My Magic String",
+              "htmlSnippet": "My Magic \u003cb\u003eString\u003c/b\u003e",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://mariasmovers.com/2012/01/18/my-magic-string/",
+              "height": 383,
+              "width": 400,
+              "byteSize": 20881,
+              "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxdmILTJJBUlXzOGgb-ornvVWKFaE0aBQcfGjzI1hpC113gHhLvfa7E5Y",
+              "thumbnailHeight": 119,
+              "thumbnailWidth": 124
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "File:String-Beispiel.jpg - Wikimedia Commons",
+              "htmlTitle": "File:\u003cb\u003eString\u003c/b\u003e-Beispiel.jpg - Wikimedia Commons",
+              "link": "http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/String-Beispiel.jpg/507px-String-Beispiel.jpg",
+              "displayLink": "commons.wikimedia.org",
+              "snippet": "File:String-Beispiel.jpg",
+              "htmlSnippet": "File:\u003cb\u003eString\u003c/b\u003e-Beispiel.jpg",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://commons.wikimedia.org/wiki/File:String-Beispiel.jpg",
+              "height": 480,
+              "width": 507,
+              "byteSize": 35461,
+              "thumbnailLink": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuv1dLG_LWRVniEFOBZFQFhi5lyAFZDDFSRdPUTrMtt_0z_hF5VNuVrJI",
+              "thumbnailHeight": 124,
+              "thumbnailWidth": 131
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "Get Noticed: Neon Sheer & Mesh Underwear » The Underwear Expert",
+              "htmlTitle": "Get Noticed: Neon Sheer &amp; Mesh Underwear » The Underwear Expert",
+              "link": "http://www.underwearexpert.com/wp-content/uploads/2013/04/Good-Devil-Sheer-Side-G-String-Yellow.jpg",
+              "displayLink": "www.underwearexpert.com",
+              "snippet": "design with already",
+              "htmlSnippet": "design with already",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.underwearexpert.com/2013/04/get-noticed-neon-sheer-mesh-underwear/",
+              "height": 701,
+              "width": 600,
+              "byteSize": 46507,
+              "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS72vXsCzjOzzbNx66glUVhh1rZGLFQngR8Wfd44isznvm1WtZGszxwcu5s",
+              "thumbnailHeight": 140,
+              "thumbnailWidth": 120
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "How to Make String from Natural Sources: 11 Steps (with Pictures)",
+              "htmlTitle": "How to Make \u003cb\u003eString\u003c/b\u003e from Natural Sources: 11 Steps (with Pictures)",
+              "link": "http://pad3.whstatic.com/images/thumb/c/c5/Make-String-from-Natural-Sources-Step-5.jpg/670px-Make-String-from-Natural-Sources-Step-5.jpg",
+              "displayLink": "www.wikihow.com",
+              "snippet": "Make String from Natural",
+              "htmlSnippet": "Make \u003cb\u003eString\u003c/b\u003e from Natural",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.wikihow.com/Make-String-from-Natural-Sources",
+              "height": 503,
+              "width": 670,
+              "byteSize": 90533,
+              "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwmIN5RcBeNfspx01y-ckKXXHK1MSBlBKTY9ReOsFAmL8AT5ukuPPoAk",
+              "thumbnailHeight": 104,
+              "thumbnailWidth": 138
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "Wolford Online Shop \u003e Velvet T-",
+              "htmlTitle": "Wolford Online Shop &gt; Velvet T-",
+              "link": "http://images.wolfordshop.ie/product/60905/9061_detail/velvet-t-string.jpg",
+              "displayLink": "www.wolfordshop.ie",
+              "snippet": "VELVET T-STRING",
+              "htmlSnippet": "VELVET T-\u003cb\u003eSTRING\u003c/b\u003e",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.wolfordshop.ie/product/boutique/velvet-t-string/60905",
+              "height": 460,
+              "width": 364,
+              "byteSize": 62777,
+              "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5Re2-AnIaCQr_xQBY2MUPfb8RJgg_H-t_aFYlzrvUvCQke973G6HMBs",
+              "thumbnailHeight": 128,
+              "thumbnailWidth": 101
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "How can I create a C-string using a cup protector? (because it's ...",
+              "htmlTitle": "How can I create a C-\u003cb\u003estring\u003c/b\u003e using a cup protector? (because it&#39;s \u003cb\u003e...\u003c/b\u003e",
+              "link": "http://cdn.instructables.com/FOC/J2LM/HAQ3D3N7/FOCJ2LMHAQ3D3N7.MEDIUM.jpg",
+              "displayLink": "www.instructables.com",
+              "snippet": "fashion-c-string-black.jpg",
+              "htmlSnippet": "fashion-c-\u003cb\u003estring\u003c/b\u003e-black.jpg",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.instructables.com/community/How-can-I-create-my-own-C-string-using-a-cup-pro/",
+              "height": 332,
+              "width": 500,
+              "byteSize": 24405,
+              "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSab1eqLRNiLs1ejQSnSBiQSehncviHwRfSqpTA-Zz4A5IYR9N3FKn4yjg",
+              "thumbnailHeight": 86,
+              "thumbnailWidth": 130
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "File:Spool of string.jpg - Wikipedia, the free encyclopedia",
+              "htmlTitle": "File:Spool of \u003cb\u003estring\u003c/b\u003e.jpg - Wikipedia, the free encyclopedia",
+              "link": "http://upload.wikimedia.org/wikipedia/en/1/1f/Spool_of_string.jpg",
+              "displayLink": "en.wikipedia.org",
+              "snippet": "File:Spool of string.jpg",
+              "htmlSnippet": "File:Spool of \u003cb\u003estring\u003c/b\u003e.jpg",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://en.wikipedia.org/wiki/File:Spool_of_string.jpg",
+              "height": 1455,
+              "width": 1650,
+              "byteSize": 1070687,
+              "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSha7y-6zivJFa47Af0wLdXlfbg4HhTkaXeiS2UmUDwDCytLUKmCrLtBrkLgA",
+              "thumbnailHeight": 132,
+              "thumbnailWidth": 150
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "Skinz Swimbottom - G String Micro",
+              "htmlTitle": "Skinz Swimbottom - G \u003cb\u003eString\u003c/b\u003e Micro",
+              "link": "http://www.skinzwearphotography.com/prodImages/Womens-Micro-G-String-Swimsuit-Side-Tie-by-SKINZ-T34-B34-4801.jpg",
+              "displayLink": "www.skinzwear.com",
+              "snippet": "Womens G String Side Tie Micro",
+              "htmlSnippet": "Womens G \u003cb\u003eString\u003c/b\u003e Side Tie Micro",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.skinzwear.com/product_search.php?indexcat=100335&indexname=Swimbottom-G-String-Micro",
+              "height": 960,
+              "width": 800,
+              "byteSize": 236772,
+              "thumbnailLink": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSICUAh0ULuqKMSa7rtWZsnhoCTB1Hi3oQ1zwj_2IVdMM6EUjuAcKokn_A",
+              "thumbnailHeight": 148,
+              "thumbnailWidth": 123
+              }
+              },
+              {
+              "kind": "customsearch#result",
+              "title": "G String",
+              "htmlTitle": "G \u003cb\u003eString\u003c/b\u003e",
+              "link": "http://www.krystellie.co.uk/ekmps/shops/krystellie/images/g-string-998-p.jpg",
+              "displayLink": "www.krystellie.co.uk",
+              "snippet": "G String variant attributes",
+              "htmlSnippet": "G \u003cb\u003eString\u003c/b\u003e variant attributes",
+              "mime": "image/jpeg",
+              "image": {
+              "contextLink": "http://www.krystellie.co.uk/g-string-998-p.asp",
+              "height": 1650,
+              "width": 1100,
+              "byteSize": 209717,
+              "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9lqfSWnyUrQ2e5TwhLhyilSfpNZUZ80C0rmHSAprFmnqI_y9au4BNq3oz",
+              "thumbnailHeight": 150,
+              "thumbnailWidth": 100
+              }
+              }
+              ]
+}
