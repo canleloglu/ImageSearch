@@ -12,7 +12,10 @@
 @interface MainScreenCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) UIImageView* imgView;
+@property (strong, nonatomic) ImageObject* imgObj;
 
-- (void)setupWithImageUrl:(NSString*)urlStr;
+- (void)setupWithImageObj:(ImageObject*)obj;
+
+- (void)cleanup;
 
 @end

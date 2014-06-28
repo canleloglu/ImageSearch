@@ -16,14 +16,26 @@
     [self.collectionView reloadData];
 }
 
+- (void)cleanup
+{
+    self.allItems = nil;
+}
+
+- (void)dealloc
+{
+    [self cleanup];
+}
+
 #pragma mark - CollectionViewDelegate methods
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MainScreenCollectionViewCell* cell = (MainScreenCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-    if ([self.delegate respondsToSelector:@selector(controllerDidSelect:image:)])
+    if ([self.delegate respondsToSelector:@selector(controllerDidSelect:thumbnail:imageObj:)])
     {
-        [self.delegate controllerDidSelect:self image:cell.imgView.image];
+        [self.delegate controllerDidSelect:self
+                                 thumbnail:cell.imgView.image
+                                  imageObj:cell.imgObj];
     }
 }
 
@@ -46,9 +58,10 @@
     MainScreenCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     if (!cell)
     {
-        cell = [[MainScreenCollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        cell = [[MainScreenCollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     }
-    [cell setupWithImageUrl:self.allItems[indexPath.item]];
+    ImageObject* imgObj = (ImageObject*)self.allItems[indexPath.item];
+    [cell setupWithImageObj:imgObj];
     return cell;
 }
 

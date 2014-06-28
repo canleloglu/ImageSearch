@@ -20,7 +20,7 @@
 
 @property (weak, nonatomic) id<NetworkManagerDelegate> delegate;
 
-- (void)makeReq;
+- (void)makeReqWithString:(NSString*)str;
 - (void)loadFromJson;
 
 @end

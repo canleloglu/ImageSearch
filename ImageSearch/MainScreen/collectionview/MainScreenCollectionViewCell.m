@@ -21,10 +21,11 @@
     return self;
 }
 
-- (void)setupWithImageUrl:(NSString*)urlStr
+- (void)setupWithImageObj:(ImageObject*)obj
 {
+    self.imgObj = obj;
     [self.imgView removeFromSuperview];
-    [self.imgView setImageWithURL:[NSURL URLWithString:urlStr]
+    [self.imgView setImageWithURL:[NSURL URLWithString:obj.thumbnailUrlStr]
                  placeholderImage:[UIImage imageNamed:@"placeholder"]];
     [self addSubview:self.imgView];
 }
@@ -32,6 +33,11 @@
 - (void)cleanup
 {
     self.imgView = nil;
+}
+
+- (void)prepareForReuse
+{
+    [self cleanup];
 }
 
 @end

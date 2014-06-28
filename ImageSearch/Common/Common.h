@@ -10,7 +10,7 @@
 #define ImageSearch_Common_h
 
 #define API_KEY @"AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA"
-#define REQUEST_URL_STRING @"https://www.googleapis.com/customsearch/v1?key=AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA&cx=012264070333409960131:z-pppmmfxfk&searchType=image&q=string"
+#define REQUEST_URL_STRING @"https://www.googleapis.com/customsearch/v1?key=AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA&cx=012264070333409960131:z-pppmmfxfk&searchType=image&q=%@"
 
 #define cellIdentifier  @"CollectionViewCell"
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @protocol ImageDetailViewDelegate <NSObject>
 
@@ -16,12 +17,13 @@
 
 @interface ImageDetailView : UIView
 
-@property (strong, nonatomic) UIImage* image;
+@property (strong, nonatomic) UIImage* placeholder;
+@property (strong, nonatomic) ImageObject* imgObj;
 @property (weak, nonatomic) IBOutlet UIImageView* imageView;
 @property (weak, nonatomic) id<ImageDetailViewDelegate> delegate;
 
-- (IBAction)close:(id)sender;
+- (void)updateImageViewWithPlaceHolder:(UIImage*)img andImageObject:(ImageObject*)obj;
 
-- (id)initWithFrame:(CGRect)frame andImage:(UIImage*)image;
+- (IBAction)close:(id)sender;
 
 @end

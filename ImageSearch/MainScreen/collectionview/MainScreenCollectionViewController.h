@@ -10,7 +10,7 @@
 
 @protocol MainScreenCollectionViewControllerDelegate <NSObject>
 
-- (void)controllerDidSelect:(id)sender image:(UIImage*)image;
+- (void)controllerDidSelect:(id)sender thumbnail:(UIImage*)thumbnail imageObj:(ImageObject*)imageObj;
 
 @end
 
@@ -23,5 +23,6 @@
 @property (weak, nonatomic) UICollectionView* collectionView;
 
 - (void)reloadData;
+- (void)cleanup;
 
 @end

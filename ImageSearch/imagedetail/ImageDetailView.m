@@ -10,28 +10,16 @@
 
 @implementation ImageDetailView
 
-- (void)setImage:(UIImage *)image
+- (void)updateImageViewWithPlaceHolder:(UIImage*)img andImageObject:(ImageObject*)obj
 {
-    if (_image != image)
-    {
-        _image = nil;
-        _image = image;
-        if (self.imageView)
-        {
-            self.imageView.image = _image;
-        }
-    }
-}
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    self.imageView.image = self.image;
+    [self.imageView setImageWithURL:[NSURL URLWithString:obj.largeImageUrlStr]
+                   placeholderImage:img];
 }
 
 - (IBAction)close:(id)sender
 {
-    self.image = nil;
+    self.placeholder = nil;
+    self.imgObj = nil;
     [self removeFromSuperview];
     
     if ([self.delegate respondsToSelector:@selector(imageDetailViewDidClose:)])

@@ -10,9 +10,9 @@
 
 @implementation NetworkManager
 
-- (void)makeReq
+- (void)makeReqWithString:(NSString*)str
 {
-    NSURL *url = [NSURL URLWithString:REQUEST_URL_STRING];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:REQUEST_URL_STRING, str]];
     NSURLRequest* req = [NSURLRequest requestWithURL:url];
     __weak NSURLRequest* weakReq = req;
     __weak NetworkManager* weakSelf = self;
@@ -32,7 +32,6 @@
                 NSLog(@"OBJECT: %@", object);
                 [weakSelf.delegate requestFinished:weakReq withDict:object];
             }
-            
         }
     }];
 }

@@ -17,9 +17,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-PG-gP0">
-                                <rect key="frame" x="85" y="20" width="150" height="30"/>
+                                <rect key="frame" x="207" y="20" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="CUc-rR-gyi"/>
+                                </constraints>
+                                <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -37,21 +40,33 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a text for image search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-lv-a5X">
+                                <rect key="frame" x="0.0" y="20" width="207" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="qc8-ML-kOu"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Noo-PG-gP0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9hA-ZE-vaE"/>
                             <constraint firstItem="vRI-mV-5fw" firstAttribute="top" secondItem="Noo-PG-gP0" secondAttribute="bottom" constant="8" id="AuU-iC-n0Z"/>
-                            <constraint firstAttribute="centerX" secondItem="Noo-PG-gP0" secondAttribute="centerX" id="Bt2-rU-9yH"/>
+                            <constraint firstAttribute="trailing" secondItem="Noo-PG-gP0" secondAttribute="trailing" id="Eet-vW-3jt"/>
+                            <constraint firstItem="Noo-PG-gP0" firstAttribute="leading" secondItem="Omr-lv-a5X" secondAttribute="trailing" id="Qrj-ZZ-LoO"/>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="TMd-Pr-auI"/>
+                            <constraint firstItem="Omr-lv-a5X" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="XoV-pb-Ba1"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vRI-mV-5fw" secondAttribute="bottom" id="fDC-RV-B5n"/>
-                            <constraint firstAttribute="trailing" secondItem="Noo-PG-gP0" secondAttribute="trailing" constant="85" id="fFk-c0-Jlv"/>
-                            <constraint firstItem="Noo-PG-gP0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="85" id="fxd-xG-tXt"/>
                             <constraint firstAttribute="trailing" secondItem="vRI-mV-5fw" secondAttribute="trailing" id="ntU-se-5o8"/>
                             <constraint firstItem="vRI-mV-5fw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uVG-i4-Zih"/>
+                            <constraint firstItem="Omr-lv-a5X" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="v8a-Vs-NGr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="vRI-mV-5fw" id="kH4-gh-3Xb"/>
+                        <outlet property="textField" destination="Omr-lv-a5X" id="eds-K4-pLv"/>
                         <outlet property="view" destination="kh9-bI-dsS" id="3Jp-rb-crI"/>
                     </connections>
                 </viewController>
