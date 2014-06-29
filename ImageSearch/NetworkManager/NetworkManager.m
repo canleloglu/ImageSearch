@@ -10,9 +10,25 @@
 
 @implementation NetworkManager
 
-- (void)makeReqWithString:(NSString*)str
+- (id)init
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:REQUEST_URL_STRING, str]];
+    self = [super init];
+    if (self)
+    {
+        self.hasActiveRequest = NO;
+    }
+    return self;
+}
+
+- (void)makeReqWithString:(NSString*)str andIndex:(NSInteger)index
+{
+    self.hasActiveRequest = YES;
+    NSString* searchStr = [NSString stringWithFormat:REQUEST_URL_STRING, str];
+    if (index > 1)
+    {
+        searchStr = [searchStr stringByAppendingString:[NSString stringWithFormat:@"&start=%d", index]];
+    }
+    NSURL *url = [NSURL URLWithString:searchStr];
     NSURLRequest* req = [NSURLRequest requestWithURL:url];
     __weak NSURLRequest* weakReq = req;
     __weak NetworkManager* weakSelf = self;
@@ -33,6 +49,7 @@
                 [weakSelf.delegate requestFinished:weakReq withDict:object];
             }
         }
+        weakSelf.hasActiveRequest = NO;
     }];
 }
 

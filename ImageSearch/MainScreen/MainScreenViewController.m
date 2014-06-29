@@ -22,9 +22,11 @@ UITextFieldDelegate>
 
 // strong referenced objects
 @property (strong, nonatomic) NetworkManager* networkManager;
-@property (strong, nonatomic) NSMutableArray* imageUrlArray;
+@property (strong, nonatomic) NSMutableArray* imageObjArray;
 @property (strong, nonatomic) MainScreenCollectionViewController* collectionViewController;
 @property (strong, nonatomic) ImageDetailView* imageDetailView;
+
+@property (nonatomic) NSInteger searchIndex;
 
 // Outlets
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -38,11 +40,13 @@ UITextFieldDelegate>
 {
     [super viewDidLoad];
     
+    self.searchIndex = 1;
+    
     // setup network manager
     self.networkManager = [[NetworkManager alloc] init];
     self.networkManager.delegate = self;
     
-    self.imageUrlArray = [[NSMutableArray alloc] init];
+    self.imageObjArray = [[NSMutableArray alloc] init];
     
     self.collectionViewController = [[MainScreenCollectionViewController alloc] init];
     self.collectionViewController.delegate = self;
@@ -50,7 +54,7 @@ UITextFieldDelegate>
     self.collectionView.delegate = self.collectionViewController;
     self.collectionView.dataSource = self.collectionViewController;
     
-    [self.collectionView registerClass:[MainScreenCollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellWithReuseIdentifier:cellIdentifier];
 }
 
 - (void)dealloc
@@ -66,13 +70,20 @@ UITextFieldDelegate>
     [self.collectionViewController cleanup];
 }
 
+- (void)search
+{
+    NSString* searchStr = [self.textField.text searchString];
+    [self.networkManager makeReqWithString:searchStr andIndex:self.searchIndex];
+    [self.textField resignFirstResponder];
+}
+
 #pragma mark - actions
 
 - (IBAction)onButton:(id)sender
 {
-    NSString* searchStr = [self.textField.text searchString];
-    [self.networkManager makeReqWithString:searchStr];
-    [self.textField resignFirstResponder];
+    [self.imageObjArray removeAllObjects];
+    self.searchIndex = 1;
+    [self search];
 }
 
 #pragma mark - networkmanager delegate methods
@@ -87,10 +98,12 @@ UITextFieldDelegate>
         ImageObject* imgObj = [[ImageObject alloc] init];
         imgObj.thumbnailUrlStr = thumbnail;
         imgObj.largeImageUrlStr = link;
-        [self.imageUrlArray addObject:imgObj];
+        [self.imageObjArray addObject:imgObj];
     }
-    self.collectionViewController.allItems = self.imageUrlArray;
+    self.collectionViewController.allItems = self.imageObjArray;
     [self.collectionViewController reloadData];
+    
+    self.searchIndex += 10;
 }
 
 - (void)requestFailed:(NSURLRequest *)req
@@ -112,6 +125,11 @@ UITextFieldDelegate>
     [self.view addSubview:self.imageDetailView];
 }
 
+- (void)controllerHitTheBottom:(id)sender
+{
+    [self search];
+}
+
 #pragma mark - image detail delegate functions
 
 - (void)imageDetailViewDidClose:(id)sender
@@ -123,7 +141,7 @@ UITextFieldDelegate>
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [self onButton:nil];
+    [self search];
     [self.textField resignFirstResponder];
     return YES;
 }

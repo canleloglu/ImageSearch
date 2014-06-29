@@ -10,29 +10,23 @@
 
 @implementation MainScreenCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
+- (void)awakeFromNib
 {
-    self = [super initWithFrame:frame];
-    if (self)
-    {
-        self.imgView = [[UIImageView alloc] initWithFrame:self.bounds];
-        self.imgView.contentMode = UIViewContentModeScaleAspectFit;
-    }
-    return self;
+    [super awakeFromNib];
+    
+    self.backgroundColor = [UIColor clearColor];
+    [self setupWithImageObj:self.imgObj];
 }
 
 - (void)setupWithImageObj:(ImageObject*)obj
 {
     self.imgObj = obj;
-    [self.imgView removeFromSuperview];
     [self.imgView setImageWithURL:[NSURL URLWithString:obj.thumbnailUrlStr]
                  placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    [self addSubview:self.imgView];
 }
 
 - (void)cleanup
 {
-    self.imgView = nil;
 }
 
 - (void)prepareForReuse

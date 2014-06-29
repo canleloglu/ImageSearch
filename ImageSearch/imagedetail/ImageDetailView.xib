@@ -11,7 +11,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-ix-Y9A">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udb-3b-PSd">
@@ -33,7 +33,7 @@
             <constraints>
                 <constraint firstItem="udb-3b-PSd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="3Y3-z4-mV6"/>
                 <constraint firstAttribute="trailing" secondItem="udb-3b-PSd" secondAttribute="trailing" constant="20" id="FGC-Xh-Cix"/>
-                <constraint firstItem="sSc-ix-Y9A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KSu-fQ-HRq"/>
+                <constraint firstItem="sSc-ix-Y9A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="KSu-fQ-HRq"/>
                 <constraint firstAttribute="trailing" secondItem="sSc-ix-Y9A" secondAttribute="trailing" id="LTA-f8-MMD"/>
                 <constraint firstItem="sSc-ix-Y9A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XsI-D7-7tg"/>
                 <constraint firstAttribute="bottom" secondItem="sSc-ix-Y9A" secondAttribute="bottom" id="kRE-aS-ht0"/>

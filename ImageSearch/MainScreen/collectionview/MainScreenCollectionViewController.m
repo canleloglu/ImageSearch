@@ -9,6 +9,12 @@
 #import "MainScreenCollectionViewController.h"
 #import "MainScreenCollectionViewCell.h"
 
+@interface MainScreenCollectionViewController ()
+
+@property (strong, nonatomic) MainScreenCollectionViewCell* reusableCell;
+
+@end
+
 @implementation MainScreenCollectionViewController
 
 - (void)reloadData
@@ -58,11 +64,26 @@
     MainScreenCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     if (!cell)
     {
-        cell = [[MainScreenCollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        cell = (MainScreenCollectionViewCell*)[[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil] objectAtIndex:0];
     }
     ImageObject* imgObj = (ImageObject*)self.allItems[indexPath.item];
     [cell setupWithImageObj:imgObj];
     return cell;
+}
+
+#pragma mark - uiscrollview delegate methods
+
+-(void)scrollViewDidScroll: (UIScrollView*)scrollView
+{
+    float scrollViewHeight = scrollView.frame.size.height;
+    float scrollContentSizeHeight = scrollView.contentSize.height;
+    float scrollOffset = scrollView.contentOffset.y;
+    
+    if (scrollOffset + scrollViewHeight == scrollContentSizeHeight &&
+        [self.delegate respondsToSelector:@selector(controllerHitTheBottom:)])
+    {
+        [self.delegate controllerHitTheBottom:self];
+    }
 }
 
 @end

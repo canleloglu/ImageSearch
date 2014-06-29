@@ -19,8 +19,9 @@
 <NSURLConnectionDelegate>
 
 @property (weak, nonatomic) id<NetworkManagerDelegate> delegate;
+@property (atomic) BOOL hasActiveRequest;
 
-- (void)makeReqWithString:(NSString*)str;
+- (void)makeReqWithString:(NSString*)str andIndex:(NSInteger)index;
 - (void)loadFromJson;
 
 @end

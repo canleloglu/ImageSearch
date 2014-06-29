@@ -11,6 +11,7 @@
 @protocol MainScreenCollectionViewControllerDelegate <NSObject>
 
 - (void)controllerDidSelect:(id)sender thumbnail:(UIImage*)thumbnail imageObj:(ImageObject*)imageObj;
+- (void)controllerHitTheBottom:(id)sender;
 
 @end
 

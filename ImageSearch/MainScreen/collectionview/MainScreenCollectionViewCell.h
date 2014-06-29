@@ -11,7 +11,7 @@
 
 @interface MainScreenCollectionViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) UIImageView* imgView;
+@property (weak, nonatomic) IBOutlet UIImageView* imgView;
 @property (strong, nonatomic) ImageObject* imgObj;
 
 - (void)setupWithImageObj:(ImageObject*)obj;
