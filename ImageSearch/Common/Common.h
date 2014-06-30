@@ -13,6 +13,8 @@
 #define REQUEST_URL_STRING @"https://www.googleapis.com/customsearch/v1?key=AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA&cx=012264070333409960131:z-pppmmfxfk&searchType=image&q=%@&num=10"
 
 #define cellIdentifier  @"MainScreenCollectionViewCell"
+#define tableCellIdentifier  @"tableCellIdentifier"
+#define pastKey @"PastArrayKey"
 
 // working
 //@"https://www.googleapis.com/customsearch/v1?q=string&key=AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA&cx=012264070333409960131:z-pppmmfxfk"

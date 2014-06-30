@@ -19,6 +19,7 @@
 		784953D2195F7D8800BEBFF2 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953D1195F7D8800BEBFF2 /* ImageObject.m */; };
 		784953D6195F864B00BEBFF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953D5195F864B00BEBFF2 /* NSString+Extension.m */; };
 		784953D8195F977400BEBFF2 /* MainScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784953D7195F977400BEBFF2 /* MainScreenCollectionViewCell.xib */; };
+		784953F61960D88700BEBFF2 /* MainScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */; };
 		78FEC105195D147100A4A901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC104195D147100A4A901 /* Foundation.framework */; };
 		78FEC107195D147100A4A901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC106195D147100A4A901 /* CoreGraphics.framework */; };
 		78FEC109195D147100A4A901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC108195D147100A4A901 /* UIKit.framework */; };
@@ -64,6 +65,8 @@
 		784953D4195F864B00BEBFF2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "utilities/NSString+Extension.h"; sourceTree = "<group>"; };
 		784953D5195F864B00BEBFF2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "utilities/NSString+Extension.m"; sourceTree = "<group>"; };
 		784953D7195F977400BEBFF2 /* MainScreenCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainScreenCollectionViewCell.xib; path = MainScreen/collectionview/MainScreenCollectionViewCell.xib; sourceTree = "<group>"; };
+		784953F41960D88700BEBFF2 /* MainScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenTableViewController.h; path = tableview/MainScreenTableViewController.h; sourceTree = "<group>"; };
+		784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenTableViewController.m; path = tableview/MainScreenTableViewController.m; sourceTree = "<group>"; };
 		78FEC101195D147100A4A901 /* ImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FEC104195D147100A4A901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78FEC106195D147100A4A901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,7 @@
 			children = (
 				784953D3195F863900BEBFF2 /* utilities */,
 				78176FFD195F565800A85B8A /* imgdetail */,
+				784953F31960D7E600BEBFF2 /* tableview */,
 				78176FEF195F14E100A85B8A /* collectionview */,
 				78176FEC195F0F4400A85B8A /* MainScreenViewController.h */,
 				78176FED195F0F4400A85B8A /* MainScreenViewController.m */,
@@ -161,6 +165,15 @@
 				784953D5195F864B00BEBFF2 /* NSString+Extension.m */,
 			);
 			name = utilities;
+			sourceTree = "<group>";
+		};
+		784953F31960D7E600BEBFF2 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				784953F41960D88700BEBFF2 /* MainScreenTableViewController.h */,
+				784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */,
+			);
+			name = tableview;
 			sourceTree = "<group>";
 		};
 		78FEC0F8195D147100A4A901 = {
@@ -363,6 +376,7 @@
 				78176FEE195F0F4400A85B8A /* MainScreenViewController.m in Sources */,
 				784953D2195F7D8800BEBFF2 /* ImageObject.m in Sources */,
 				78FEC13E195D1C6C00A4A901 /* NetworkManager.m in Sources */,
+				784953F61960D88700BEBFF2 /* MainScreenTableViewController.m in Sources */,
 				78176FF5195F1A3600A85B8A /* MainScreenCollectionViewCell.m in Sources */,
 				78176FF2195F153000A85B8A /* MainScreenCollectionViewController.m in Sources */,
 				78177000195F56B200A85B8A /* ImageDetailView.m in Sources */,

@@ -40,7 +40,12 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a text for image search" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-lv-a5X">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-qB-RXE">
+                                <rect key="frame" x="0.0" y="58" width="320" height="510"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for images" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-lv-a5X">
                                 <rect key="frame" x="0.0" y="20" width="207" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -54,8 +59,12 @@
                         <constraints>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9hA-ZE-vaE"/>
                             <constraint firstItem="vRI-mV-5fw" firstAttribute="top" secondItem="Noo-PG-gP0" secondAttribute="bottom" constant="8" id="AuU-iC-n0Z"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ylh-qB-RXE" secondAttribute="bottom" id="CX8-mg-EQP"/>
                             <constraint firstAttribute="trailing" secondItem="Noo-PG-gP0" secondAttribute="trailing" id="Eet-vW-3jt"/>
+                            <constraint firstAttribute="trailing" secondItem="Ylh-qB-RXE" secondAttribute="trailing" id="HM0-Ph-Zrd"/>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="leading" secondItem="Omr-lv-a5X" secondAttribute="trailing" id="Qrj-ZZ-LoO"/>
+                            <constraint firstItem="Ylh-qB-RXE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="S07-kA-Ore"/>
+                            <constraint firstItem="Ylh-qB-RXE" firstAttribute="top" secondItem="Omr-lv-a5X" secondAttribute="bottom" constant="8" id="Sh5-ev-gLy"/>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="TMd-Pr-auI"/>
                             <constraint firstItem="Omr-lv-a5X" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="XoV-pb-Ba1"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vRI-mV-5fw" secondAttribute="bottom" id="fDC-RV-B5n"/>
@@ -66,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="vRI-mV-5fw" id="kH4-gh-3Xb"/>
+                        <outlet property="tableView" destination="Ylh-qB-RXE" id="0rv-lw-8gF"/>
                         <outlet property="textField" destination="Omr-lv-a5X" id="eds-K4-pLv"/>
                         <outlet property="view" destination="kh9-bI-dsS" id="3Jp-rb-crI"/>
                     </connections>
