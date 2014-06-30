@@ -154,6 +154,7 @@ UITextFieldDelegate>
 
 - (void)tableControllerDidSelect:(id)sender searchTerm:(NSString *)searchTerm
 {
+    [self.imageObjArray removeAllObjects];
     [self.tableViewController pushSearchToPast:searchTerm];
     self.tableView.hidden = YES;
     self.textField.text = searchTerm;
