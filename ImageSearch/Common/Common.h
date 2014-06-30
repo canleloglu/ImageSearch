@@ -16,6 +16,8 @@
 #define tableCellIdentifier  @"tableCellIdentifier"
 #define pastKey @"PastArrayKey"
 
+#define searchBlock 10
+
 // working
 //@"https://www.googleapis.com/customsearch/v1?q=string&key=AIzaSyAbaGKoQ9W2rchxu8L17n_shZjFHekDCMA&cx=012264070333409960131:z-pppmmfxfk"
 

@@ -216,7 +216,13 @@ UITextFieldDelegate>
     self.collectionViewController.allItems = [NSArray arrayWithArray:self.imageObjArray];
     [self.collectionViewController reloadData];
     
-    self.searchIndex += 10; // Start next search from index + 10 - we show results 10 by 10
+    self.searchIndex += searchBlock; // Start next search from index + 10 - we show results 10 by 10
+    
+    // The first search does not fill the screen - we should do it this way because the api fails for +10 result requests
+    if ([self.collectionViewController.allItems count] == searchBlock)
+    {
+        [self search];
+    }
 }
 
 /*
@@ -303,6 +309,7 @@ UITextFieldDelegate>
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     // If the user taps the return button this should be a new search
+    self.tableView.hidden = YES;
     [self prepareForNewSearch];
     [self search];
     return YES;

@@ -46,6 +46,9 @@
     
     [NSURLConnection sendAsynchronousRequest:req queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError)
     {
+        // The block is done - ready to handle another request
+        weakSelf.hasActiveRequest = NO;
+        
         // If we have an error we call requestFailed callback
         if (connectionError && [weakSelf.delegate respondsToSelector:@selector(requestFailed:withReason:)])
         {
@@ -64,13 +67,11 @@
             }
             else
             {
+                NSLog(@"obj %@", object);
                 // Call the requestfinished callback to pass the result to the delegate
                 [weakSelf.delegate requestFinished:weakReq withDict:object];
             }
         }
-        
-        // The block is done - ready to handle another request
-        weakSelf.hasActiveRequest = NO;
     }];
 }
 
