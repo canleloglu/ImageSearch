@@ -28,14 +28,10 @@
 - (void)updateImageViewWithPlaceHolder:(UIImage*)img andImageObject:(ImageObject*)obj
 {
     [self.activityView startAnimating];
-    __weak ImageDetailView* weakself = self;
+    __weak ImageDetailView* weakself = self;//
     [self.imageView setImageWithURL:[NSURL URLWithString:obj.largeImageUrlStr]
                    placeholderImage:img
-                            success:^(UIImage *image, BOOL cached)
-    {
-        [weakself.activityView stopAnimating];
-    }
-    failure:^(NSError *error)
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType)
     {
         [weakself.activityView stopAnimating];
     }];

@@ -11,7 +11,6 @@
 		78176FEE195F0F4400A85B8A /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78176FED195F0F4400A85B8A /* MainScreenViewController.m */; };
 		78176FF2195F153000A85B8A /* MainScreenCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78176FF1195F153000A85B8A /* MainScreenCollectionViewController.m */; };
 		78176FF5195F1A3600A85B8A /* MainScreenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78176FF4195F1A3600A85B8A /* MainScreenCollectionViewCell.m */; };
-		78176FF8195F233700A85B8A /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78176FF7195F233700A85B8A /* SDWebImage.framework */; };
 		78176FFA195F235900A85B8A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78176FF9195F235900A85B8A /* ImageIO.framework */; };
 		78176FFC195F35B400A85B8A /* placeholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 78176FFB195F35B400A85B8A /* placeholder.jpeg */; };
 		78177000195F56B200A85B8A /* ImageDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78176FFF195F56B200A85B8A /* ImageDetailView.m */; };
@@ -22,6 +21,7 @@
 		784953F61960D88700BEBFF2 /* MainScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */; };
 		784953F91960FF8000BEBFF2 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953F81960FF8000BEBFF2 /* ActivityView.m */; };
 		784953FB1960FFEB00BEBFF2 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784953FA1960FFEB00BEBFF2 /* ActivityView.xib */; };
+		784953FE1961234E00BEBFF2 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784953FD1961234E00BEBFF2 /* SDWebImage.framework */; };
 		78FEC105195D147100A4A901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC104195D147100A4A901 /* Foundation.framework */; };
 		78FEC107195D147100A4A901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC106195D147100A4A901 /* CoreGraphics.framework */; };
 		78FEC109195D147100A4A901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC108195D147100A4A901 /* UIKit.framework */; };
@@ -56,7 +56,6 @@
 		78176FF1195F153000A85B8A /* MainScreenCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenCollectionViewController.m; path = MainScreen/collectionview/MainScreenCollectionViewController.m; sourceTree = "<group>"; };
 		78176FF3195F1A3600A85B8A /* MainScreenCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenCollectionViewCell.h; path = MainScreen/collectionview/MainScreenCollectionViewCell.h; sourceTree = "<group>"; };
 		78176FF4195F1A3600A85B8A /* MainScreenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenCollectionViewCell.m; path = MainScreen/collectionview/MainScreenCollectionViewCell.m; sourceTree = "<group>"; };
-		78176FF7195F233700A85B8A /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		78176FF9195F235900A85B8A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		78176FFB195F35B400A85B8A /* placeholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpeg; sourceTree = "<group>"; };
 		78176FFE195F56B200A85B8A /* ImageDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDetailView.h; path = imagedetail/ImageDetailView.h; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		784953F71960FF8000BEBFF2 /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityView.h; path = utilities/ActivityView.h; sourceTree = "<group>"; };
 		784953F81960FF8000BEBFF2 /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityView.m; path = utilities/ActivityView.m; sourceTree = "<group>"; };
 		784953FA1960FFEB00BEBFF2 /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityView.xib; path = utilities/ActivityView.xib; sourceTree = "<group>"; };
+		784953FD1961234E00BEBFF2 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		78FEC101195D147100A4A901 /* ImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FEC104195D147100A4A901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78FEC106195D147100A4A901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,8 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784953FE1961234E00BEBFF2 /* SDWebImage.framework in Frameworks */,
 				78176FFA195F235900A85B8A /* ImageIO.framework in Frameworks */,
-				78176FF8195F233700A85B8A /* SDWebImage.framework in Frameworks */,
 				78FEC107195D147100A4A901 /* CoreGraphics.framework in Frameworks */,
 				78FEC109195D147100A4A901 /* UIKit.framework in Frameworks */,
 				78FEC105195D147100A4A901 /* Foundation.framework in Frameworks */,
@@ -207,8 +207,8 @@
 		78FEC103195D147100A4A901 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				784953FD1961234E00BEBFF2 /* SDWebImage.framework */,
 				78176FF9195F235900A85B8A /* ImageIO.framework */,
-				78176FF7195F233700A85B8A /* SDWebImage.framework */,
 				78FEC104195D147100A4A901 /* Foundation.framework */,
 				78FEC106195D147100A4A901 /* CoreGraphics.framework */,
 				78FEC108195D147100A4A901 /* UIKit.framework */,
