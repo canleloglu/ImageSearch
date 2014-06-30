@@ -54,14 +54,25 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="qc8-ML-kOu"/>
                                 </connections>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9W-ae-y0p" userLabel="ActivityView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xcu-Oc-daA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A9W-ae-y0p" secondAttribute="trailing" id="6ba-C8-HXp"/>
+                            <constraint firstItem="A9W-ae-y0p" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7ih-xU-eT5"/>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="9hA-ZE-vaE"/>
                             <constraint firstItem="vRI-mV-5fw" firstAttribute="top" secondItem="Noo-PG-gP0" secondAttribute="bottom" constant="8" id="AuU-iC-n0Z"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ylh-qB-RXE" secondAttribute="bottom" id="CX8-mg-EQP"/>
                             <constraint firstAttribute="trailing" secondItem="Noo-PG-gP0" secondAttribute="trailing" id="Eet-vW-3jt"/>
                             <constraint firstAttribute="trailing" secondItem="Ylh-qB-RXE" secondAttribute="trailing" id="HM0-Ph-Zrd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A9W-ae-y0p" secondAttribute="bottom" id="HQu-ue-MMW"/>
                             <constraint firstItem="Noo-PG-gP0" firstAttribute="leading" secondItem="Omr-lv-a5X" secondAttribute="trailing" id="Qrj-ZZ-LoO"/>
                             <constraint firstItem="Ylh-qB-RXE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="S07-kA-Ore"/>
                             <constraint firstItem="Ylh-qB-RXE" firstAttribute="top" secondItem="Omr-lv-a5X" secondAttribute="bottom" constant="8" id="Sh5-ev-gLy"/>
@@ -74,6 +85,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityContainer" destination="A9W-ae-y0p" id="bZC-sU-PCw"/>
                         <outlet property="collectionView" destination="vRI-mV-5fw" id="kH4-gh-3Xb"/>
                         <outlet property="tableView" destination="Ylh-qB-RXE" id="0rv-lw-8gF"/>
                         <outlet property="textField" destination="Omr-lv-a5X" id="eds-K4-pLv"/>

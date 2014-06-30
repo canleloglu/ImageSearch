@@ -10,7 +10,9 @@
 
 @interface ImageObject : NSObject
 
+// Thumbnail url string for collection view
 @property (strong, nonatomic) NSString* thumbnailUrlStr;
+// Large image url string for image detail view
 @property (strong, nonatomic) NSString* largeImageUrlStr;
 
 @end

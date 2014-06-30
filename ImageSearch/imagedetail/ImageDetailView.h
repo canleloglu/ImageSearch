@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "ActivityView.h"
 
 @protocol ImageDetailViewDelegate <NSObject>
 
@@ -19,8 +20,13 @@
 
 @property (strong, nonatomic) UIImage* placeholder;
 @property (strong, nonatomic) ImageObject* imgObj;
+@property (strong, nonatomic) ActivityView* activityView;
+
 @property (weak, nonatomic) IBOutlet UIImageView* imageView;
+@property (weak, nonatomic) IBOutlet UIView* activityContainer;
+
 @property (weak, nonatomic) id<ImageDetailViewDelegate> delegate;
+
 
 - (void)updateImageViewWithPlaceHolder:(UIImage*)img andImageObject:(ImageObject*)obj;
 

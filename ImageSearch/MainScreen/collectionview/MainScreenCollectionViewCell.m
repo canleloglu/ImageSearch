@@ -10,6 +10,9 @@
 
 @implementation MainScreenCollectionViewCell
 
+/*
+ * Called when the view loaded from the xib file - sets up the initial look
+ */
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -18,6 +21,9 @@
     [self setupWithImageObj:self.imgObj];
 }
 
+/*
+ * Sets the new imgObject and shows the image in imageview - thumbnail is a placeholder until big image is downloaded
+ */
 - (void)setupWithImageObj:(ImageObject*)obj
 {
     self.imgObj = obj;
@@ -25,10 +31,17 @@
                  placeholderImage:[UIImage imageNamed:@"placeholder"]];
 }
 
+/*
+ * Cleans up the strong referenced objects
+ */
 - (void)cleanup
 {
+    self.imgObj = nil;
 }
 
+/*
+ * Cleans up before reuseing the cell to avoid problems and save memory
+ */
 - (void)prepareForReuse
 {
     [self cleanup];

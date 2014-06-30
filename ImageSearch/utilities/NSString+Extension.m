@@ -10,6 +10,9 @@
 
 @implementation NSString (Extension)
 
+/*
+ *  Returns the google safe search term - replaces spaces with +
+ */
 - (NSString*)searchString
 {
     NSMutableString *trimmedString =

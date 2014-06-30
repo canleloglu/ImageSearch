@@ -20,6 +20,8 @@
 		784953D6195F864B00BEBFF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953D5195F864B00BEBFF2 /* NSString+Extension.m */; };
 		784953D8195F977400BEBFF2 /* MainScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784953D7195F977400BEBFF2 /* MainScreenCollectionViewCell.xib */; };
 		784953F61960D88700BEBFF2 /* MainScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */; };
+		784953F91960FF8000BEBFF2 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 784953F81960FF8000BEBFF2 /* ActivityView.m */; };
+		784953FB1960FFEB00BEBFF2 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784953FA1960FFEB00BEBFF2 /* ActivityView.xib */; };
 		78FEC105195D147100A4A901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC104195D147100A4A901 /* Foundation.framework */; };
 		78FEC107195D147100A4A901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC106195D147100A4A901 /* CoreGraphics.framework */; };
 		78FEC109195D147100A4A901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FEC108195D147100A4A901 /* UIKit.framework */; };
@@ -67,6 +69,9 @@
 		784953D7195F977400BEBFF2 /* MainScreenCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainScreenCollectionViewCell.xib; path = MainScreen/collectionview/MainScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		784953F41960D88700BEBFF2 /* MainScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenTableViewController.h; path = tableview/MainScreenTableViewController.h; sourceTree = "<group>"; };
 		784953F51960D88700BEBFF2 /* MainScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenTableViewController.m; path = tableview/MainScreenTableViewController.m; sourceTree = "<group>"; };
+		784953F71960FF8000BEBFF2 /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityView.h; path = utilities/ActivityView.h; sourceTree = "<group>"; };
+		784953F81960FF8000BEBFF2 /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityView.m; path = utilities/ActivityView.m; sourceTree = "<group>"; };
+		784953FA1960FFEB00BEBFF2 /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityView.xib; path = utilities/ActivityView.xib; sourceTree = "<group>"; };
 		78FEC101195D147100A4A901 /* ImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FEC104195D147100A4A901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78FEC106195D147100A4A901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +137,7 @@
 				78176FEF195F14E100A85B8A /* collectionview */,
 				78176FEC195F0F4400A85B8A /* MainScreenViewController.h */,
 				78176FED195F0F4400A85B8A /* MainScreenViewController.m */,
+				78FEC116195D147100A4A901 /* Main.storyboard */,
 			);
 			name = MainScreen;
 			sourceTree = "<group>";
@@ -163,6 +169,9 @@
 			children = (
 				784953D4195F864B00BEBFF2 /* NSString+Extension.h */,
 				784953D5195F864B00BEBFF2 /* NSString+Extension.m */,
+				784953F71960FF8000BEBFF2 /* ActivityView.h */,
+				784953F81960FF8000BEBFF2 /* ActivityView.m */,
+				784953FA1960FFEB00BEBFF2 /* ActivityView.xib */,
 			);
 			name = utilities;
 			sourceTree = "<group>";
@@ -215,7 +224,6 @@
 				78176FE7195F0ED000A85B8A /* AppDelegate */,
 				78FEC13B195D1C4700A4A901 /* NetworkManager */,
 				78FEC139195D18FC00A4A901 /* Common */,
-				78FEC116195D147100A4A901 /* Main.storyboard */,
 				78FEC11C195D147100A4A901 /* Images.xcassets */,
 				78FEC10B195D147100A4A901 /* Supporting Files */,
 			);
@@ -353,6 +361,7 @@
 				784953D8195F977400BEBFF2 /* MainScreenCollectionViewCell.xib in Resources */,
 				78FEC118195D147100A4A901 /* Main.storyboard in Resources */,
 				78176FFC195F35B400A85B8A /* placeholder.jpeg in Resources */,
+				784953FB1960FFEB00BEBFF2 /* ActivityView.xib in Resources */,
 				78177002195F594E00A85B8A /* ImageDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78176FEB195F0F2000A85B8A /* AppDelegate.m in Sources */,
+				784953F91960FF8000BEBFF2 /* ActivityView.m in Sources */,
 				78176FEE195F0F4400A85B8A /* MainScreenViewController.m in Sources */,
 				784953D2195F7D8800BEBFF2 /* ImageObject.m in Sources */,
 				78FEC13E195D1C6C00A4A901 /* NetworkManager.m in Sources */,

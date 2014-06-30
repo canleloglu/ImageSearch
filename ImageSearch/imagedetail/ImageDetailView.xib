@@ -28,18 +28,30 @@
                         <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="BbI-cH-YTb"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XX-ta-I6W" userLabel="ActivityContainer">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MnR-GE-Qq2"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="udb-3b-PSd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="3Y3-z4-mV6"/>
+                <constraint firstItem="6XX-ta-I6W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3fZ-Iv-sHh"/>
                 <constraint firstAttribute="trailing" secondItem="udb-3b-PSd" secondAttribute="trailing" constant="20" id="FGC-Xh-Cix"/>
                 <constraint firstItem="sSc-ix-Y9A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="KSu-fQ-HRq"/>
                 <constraint firstAttribute="trailing" secondItem="sSc-ix-Y9A" secondAttribute="trailing" id="LTA-f8-MMD"/>
                 <constraint firstItem="sSc-ix-Y9A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XsI-D7-7tg"/>
+                <constraint firstAttribute="bottom" secondItem="6XX-ta-I6W" secondAttribute="bottom" id="cun-oh-zwR"/>
                 <constraint firstAttribute="bottom" secondItem="sSc-ix-Y9A" secondAttribute="bottom" id="kRE-aS-ht0"/>
+                <constraint firstAttribute="trailing" secondItem="6XX-ta-I6W" secondAttribute="trailing" id="nrF-ex-cQa"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
+                <outlet property="activityContainer" destination="6XX-ta-I6W" id="JP7-3n-z9n"/>
                 <outlet property="imageView" destination="sSc-ix-Y9A" id="7al-1r-9rZ"/>
             </connections>
         </view>

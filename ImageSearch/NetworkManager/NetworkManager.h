@@ -11,7 +11,7 @@
 @protocol NetworkManagerDelegate <NSObject>
 
 - (void)requestFinished:(NSURLRequest*)req withDict:(NSDictionary*)dict;
-- (void)requestFailed:(NSURLRequest*)req;
+- (void)requestFailed:(NSURLRequest*)req withReason:(NSString*)reason;
 
 @end
 
@@ -22,6 +22,5 @@
 @property (atomic) BOOL hasActiveRequest;
 
 - (void)makeReqWithString:(NSString*)str andIndex:(NSInteger)index;
-- (void)loadFromJson;
 
 @end
