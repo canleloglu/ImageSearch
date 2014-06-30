@@ -36,7 +36,7 @@
     if (index > 1)
     {
         // appends an index number to the url if we are trying to get more results on the same search term
-        searchStr = [searchStr stringByAppendingString:[NSString stringWithFormat:@"&start=%d", index]];
+        searchStr = [searchStr stringByAppendingString:[NSString stringWithFormat:@"&start=%ld", (long)index]];
     }
     NSURL *url = [NSURL URLWithString:searchStr];
     NSURLRequest* req = [NSURLRequest requestWithURL:url];

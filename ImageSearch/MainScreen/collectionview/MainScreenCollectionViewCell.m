@@ -27,9 +27,8 @@
 - (void)setupWithImageObj:(ImageObject*)obj
 {
     self.imgObj = obj;
-    [self.imgView setImageWithURL:[NSURL URLWithString:obj.thumbnailUrlStr]
-                 placeholderImage:[UIImage imageNamed:@"placeholder.jpeg"]
-                          options:SDWebImageRefreshCached];
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:obj.thumbnailUrlStr]
+                    placeholderImage:[UIImage imageNamed:@"placeholder.jpeg"]];
     //[imageView setImageWithURL:[NSURL URLWithString:@"https://graph.facebook.com/olivier.poitrey/picture"]
 //placeholderImage:[UIImage imageNamed:@"avatar-placeholder.png"]
 //options:SDWebImageRefreshCached];

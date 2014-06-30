@@ -29,9 +29,15 @@
 {
     [self.activityView startAnimating];
     __weak ImageDetailView* weakself = self;//
-    [self.imageView setImageWithURL:[NSURL URLWithString:obj.largeImageUrlStr]
-                   placeholderImage:img
-                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType)
+//    [self.imageView setImageWithURL:[NSURL URLWithString:obj.largeImageUrlStr]
+//                   placeholderImage:img
+//                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType)
+//    {
+//        [weakself.activityView stopAnimating];
+//    }];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:obj.largeImageUrlStr]
+                      placeholderImage:img
+                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL)
     {
         [weakself.activityView stopAnimating];
     }];
